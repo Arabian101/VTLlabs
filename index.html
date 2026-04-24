@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VTL Labs - Premium Protein & Supplements</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #2ecc71;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #2ecc71;
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2ecc71;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      color: #2ecc71;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #ccc;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #2ecc71;
+      border: none;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #2ecc71;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #2ecc71;
+    }
+
+    .card h3 {
+      color: #2ecc71;
+    }
+
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .buy-btn {
+      background: #2ecc71;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .about, .contact {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #2ecc71;
+      margin-top: 40px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #1b1b1b;
+      border: 1px solid #2ecc71;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VTL LABS</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Fuel Your Body. Upgrade Your Life.</h2>
+  <p>VTL Labs delivers premium protein powders, vitamins, and performance supplements designed for athletes, lifters, and high performers.</p>
+  <button class="btn">Shop Now</button>
+</section>
+
+<section id="shop">
+  <h2 class="section-title">Our Products</h2>
+  <div class="products">
+
+    <div class="card">
+      <h3>VTL Whey Protein</h3>
+      <p>High-quality whey protein for muscle growth and recovery.</p>
+      <div class="price">€29.99</div>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>VTL Creatine X</h3>
+      <p>Boost strength, power, and performance in every workout.</p>
+      <div class="price">€19.99</div>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>VTL Pre-Workout</h3>
+      <p>Explosive energy and focus for intense training sessions.</p>
+      <div class="price">€24.99</div>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h3>VTL Multivitamin</h3>
+      <p>Daily essential vitamins for overall health and wellness.</p>
+      <div class="price">€14.99</div>
+      <button class="buy-btn">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2 class="section-title">About VTL Labs</h2>
+  <p>
+    VTL Labs is a modern supplement brand focused on science-backed nutrition and performance enhancement. 
+    Our mission is to help individuals unlock their full physical and mental potential through clean, effective formulas.
+  </p>
+  <p>
+    Founded by athletes and nutrition enthusiasts, we prioritize transparency, quality ingredients, and real-world results.
+  </p>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p>Have questions? Reach out to our support team.</p>
+
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 VTL Labs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
