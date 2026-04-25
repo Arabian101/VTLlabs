@@ -1,221 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VTL Labs - Premium Protein & Supplements</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VTL Labs</title>
 
-    header {
-      background: #111;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #2ecc71;
-      position: sticky;
-      top: 0;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0b1a2b;
+  color: white;
+}
 
-    header h1 {
-      color: #2ecc71;
-      margin: 0;
-      font-size: 24px;
-      letter-spacing: 2px;
-    }
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #081420;
+  position: sticky;
+  top: 0;
+}
 
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.logo {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 22px;
+}
 
-    nav a:hover {
-      color: #2ecc71;
-    }
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
 
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-    }
+nav a:hover {
+  color: #00ff88;
+}
 
-    .hero h2 {
-      font-size: 40px;
-      color: #2ecc71;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-      color: #ccc;
-    }
+.hero h1 {
+  font-size: 50px;
+  color: #00ff88;
+}
 
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #2ecc71;
-      border: none;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  color: #ccc;
+}
 
-    section {
-      padding: 60px 20px;
-    }
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #00ff88;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    h2.section-title {
-      text-align: center;
-      color: #2ecc71;
-      margin-bottom: 30px;
-    }
+/* PRODUCTS */
+.section {
+  padding: 60px 40px;
+}
 
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.section h2 {
+  text-align: center;
+  color: #00ff88;
+}
 
-    .card {
-      background: #1b1b1b;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      border: 1px solid #2ecc71;
-    }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
 
-    .card h3 {
-      color: #2ecc71;
-    }
+.card {
+  background: #0f2538;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #00ff88;
+  transition: 0.3s;
+}
 
-    .price {
-      font-size: 18px;
-      margin: 10px 0;
-    }
+.card:hover {
+  transform: translateY(-5px);
+}
 
-    .buy-btn {
-      background: #2ecc71;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-    }
+.card h3 {
+  color: #00ff88;
+}
 
-    .about, .contact {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      color: #ccc;
-    }
+.price {
+  margin: 10px 0;
+  font-size: 18px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      border-top: 2px solid #2ecc71;
-      margin-top: 40px;
-    }
+.buy {
+  padding: 10px;
+  background: #00ff88;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      background: #1b1b1b;
-      border: 1px solid #2ecc71;
-      color: white;
-    }
+/* ABOUT */
+.about {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+}
 
-  </style>
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #081420;
+  margin-top: 50px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>VTL LABS</h1>
+  <div class="logo">VTL LABS</div>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <h2>Fuel Your Body. Upgrade Your Life.</h2>
-  <p>VTL Labs delivers premium protein powders, vitamins, and performance supplements designed for athletes, lifters, and high performers.</p>
+<section class="hero">
+  <h1>Fuel Smarter. Perform Better.</h1>
+  <p>
+    Premium high-protein meals designed for performance, convenience, and real results.
+  </p>
   <button class="btn">Shop Now</button>
 </section>
 
-<section id="shop">
-  <h2 class="section-title">Our Products</h2>
+<section class="section">
+  <h2>Featured Products</h2>
+
   <div class="products">
 
     <div class="card">
-      <h3>VTL Whey Protein</h3>
-      <p>High-quality whey protein for muscle growth and recovery.</p>
-      <div class="price">€29.99</div>
-      <button class="buy-btn">Add to Cart</button>
+      <h3>Chicken & Garlic Protein Noodles</h3>
+      <p>High-protein instant noodles with rich garlic flavor.</p>
+      <div class="price">€3.49</div>
+      <button class="buy">Buy Now</button>
     </div>
 
     <div class="card">
-      <h3>VTL Creatine X</h3>
-      <p>Boost strength, power, and performance in every workout.</p>
-      <div class="price">€19.99</div>
-      <button class="buy-btn">Add to Cart</button>
+      <h3>Spicy Veggie Protein Noodles</h3>
+      <p>Plant-based protein noodles with a spicy kick.</p>
+      <div class="price">€3.29</div>
+      <button class="buy">Buy Now</button>
+    </div>
+
+    <!-- Coming Soon -->
+    <div class="card">
+      <h3>Coming Soon</h3>
+      <p>New high-performance meals in development.</p>
     </div>
 
     <div class="card">
-      <h3>VTL Pre-Workout</h3>
-      <p>Explosive energy and focus for intense training sessions.</p>
-      <div class="price">€24.99</div>
-      <button class="buy-btn">Add to Cart</button>
+      <h3>Coming Soon</h3>
     </div>
 
     <div class="card">
-      <h3>VTL Multivitamin</h3>
-      <p>Daily essential vitamins for overall health and wellness.</p>
-      <div class="price">€14.99</div>
-      <button class="buy-btn">Add to Cart</button>
+      <h3>Coming Soon</h3>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
+    </div>
+
+    <div class="card">
+      <h3>Coming Soon</h3>
     </div>
 
   </div>
 </section>
 
-<section id="about" class="about">
-  <h2 class="section-title">About VTL Labs</h2>
+<section class="section about">
+  <h2>About VTL Labs</h2>
   <p>
-    VTL Labs is a modern supplement brand focused on science-backed nutrition and performance enhancement. 
-    Our mission is to help individuals unlock their full physical and mental potential through clean, effective formulas.
+    VTL Labs builds next-generation nutrition. Our mission is to create high-protein,
+    convenient meals that fit modern lifestyles — without compromising quality,
+    taste, or performance.
   </p>
-  <p>
-    Founded by athletes and nutrition enthusiasts, we prioritize transparency, quality ingredients, and real-world results.
-  </p>
-</section>
-
-<section id="contact" class="contact">
-  <h2 class="section-title">Contact Us</h2>
-  <p>Have questions? Reach out to our support team.</p>
-
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="5" placeholder="Your Message"></textarea>
-    <button class="btn" type="submit">Send Message</button>
-  </form>
 </section>
 
 <footer>
-  <p>&copy; 2026 VTL Labs. All rights reserved.</p>
+  <p>© 2026 VTL Labs</p>
 </footer>
 
 </body>
